@@ -23,11 +23,12 @@ KR 2.3: Tweak the final methodologies to deliver a Price-to-Performance (Metric/
 
 # Methodology
 XGBoost Classifier with the following features:
-- Name embedding cosine similarity
-- Normalized address embedding cosine similarity
-- Category embedding cosine similarity
+- Embedding cosine similarities for: Name, Normalized Address, Cateogry
 - Normalized phone match (binary)
+- Normalized website match (binary)
 - Exact category string match (binary)
+- Token ratio for: Name, Normalized Address
+- Partial ratio for: Name, Normalized Address
 - Difference in name string length
 - Difference in name word count
 
