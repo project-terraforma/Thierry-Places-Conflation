@@ -23,7 +23,7 @@ KR 2.3: Tweak the final methodologies to deliver a Price-to-Performance (Metric/
 
 # Methodology
 XGBoost Classifier with the following features:
-- Embedding cosine similarities for: Name, Normalized Address, Cateogry
+- Embedding cosine similarities for: Name, Normalized Address, Category
 - Normalized phone match (binary)
 - Normalized website match (binary)
 - Exact category string match (binary)
@@ -33,7 +33,7 @@ XGBoost Classifier with the following features:
 - Difference in name word count
 
 # Results
-|Model Name                                                 |F1-Score|F1-Score (Non-US) |F1-Score (Missing Data)|Average F1 CV Scores|Accuracy|Accuracy (Non-US) |Accuracy (Missing Data)|PR-AUC|PR-AUC (Missing Data)|PR-AUC (Non-US Data)|Total Test Time|Parameters|
+|Model Name                                                 |F1-Score|F1-Score (Non-US) |F1-Score (Missing Data)|Average F1 CV Scores|Accuracy|Accuracy (Non-US)|Accuracy (Missing Data)|PR-AUC|PR-AUC (Missing Data)|PR-AUC (Non-US Data)|Total Test Time|Parameters|
 |-----------------------------------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|----|
 |intfloat/multilingual-e5-base                              |0.898|0.887|0.736|0.896|0.873|0.873|0.839|0.968|0.787|0.913|1.496|300M|
 |BAAI/bge-m3                                                |0.904|0.902|0.8  |0.898|0.882|0.889|0.871|0.971|0.832|0.921|4.782|560M|
@@ -44,4 +44,7 @@ XGBoost Classifier with the following features:
 |intfloat/multilingual-e5-large                             |0.899|0.896|0.8  |0.898|0.875|0.883|0.871|0.965|0.832|0.919|4.815|600M|
 |Mixed (gte-multilingual-base + embeddinggemma-300m)        |0.913|0.915|0.9  |0.891|0.893|0.905|0.935|0.972|0.916|0.93 |4.395|300M + 300M|
 
+# Running the Notebook
+Run all cells in pipeline_classifier.ipynb
 
+Note: The last cell (large models) may require a high-resource GPU to run.
