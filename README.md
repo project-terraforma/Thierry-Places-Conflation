@@ -47,4 +47,5 @@ XGBoost Classifier with the following features:
 # Running the Notebook
 Run all cells in pipeline_classifier.ipynb
 
-Note: The last cell (large models) may require a high-resource GPU to run.
+Note 1: The last cell (large models) may require a high-resource GPU to run.
+Note 2: Results may change depending on the GPU. Results were obtained using an L4 GPU on Colab.
