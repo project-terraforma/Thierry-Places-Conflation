@@ -51,3 +51,6 @@ Notes:
 - The last cell (large models) may require a high-resource GPU to run.
 - Results may change depending on the GPU. Results were obtained using an L4 GPU on Colab.
 - Large model results are not kept as they required too much compute power for little return.
+
+# Presentation Slides
+https://docs.google.com/presentation/d/1txU15XmII2ghk9K_GLlG7TYuxs73wtAh-FUAtyd2Yeg/edit?usp=sharing
